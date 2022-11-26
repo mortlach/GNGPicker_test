@@ -1,0 +1,30 @@
+# all new key-value pairs should go on a new line
+# comments can come after '#' char
+# all file paths MUST use forward slash / as a seperator
+# relative directories ./ are from application binary
+
+path_to_lp_sentences=./data/lp_sents_2022.txt
+save_directory=./save
+path_to_raw_1grams=./data/1_grams
+path_to_raw_ngrams=./data/n_grams
+path_to_local_files=save/4,2,5
+phrase_ngram_length=2
+has_phrase_start=0
+has_phrase_end=0
+phrase_word_lengths=4,2,5
+raw_1grams_01=raw1grams_01.csv
+raw_1grams_02=raw1grams_02.csv
+raw_1grams_03=raw1grams_03.csv
+raw_1grams_04=raw1grams_04.csv
+raw_1grams_05=raw1grams_05.csv
+raw_1grams_06=raw1grams_06.csv
+raw_1grams_07=raw1grams_07.csv
+raw_1grams_08=raw1grams_08.csv
+raw_1grams_09=raw1grams_09.csv
+raw_1grams_10=raw1grams_10.csv
+raw_1grams_11=raw1grams_11.csv
+raw_1grams_12=raw1grams_12.csv
+raw_1grams_13=raw1grams_13.csv
+raw_1grams_14=raw1grams_14.csv
+local_ngram_filenames=local_4_2.csv,local_2_5.csv
+local_phrase_word_filenames=phrase_word_0.csv,phrase_word_1.csv,phrase_word_2.csv

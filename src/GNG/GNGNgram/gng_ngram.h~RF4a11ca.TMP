@@ -1,0 +1,62 @@
+#ifndef GNG_NGRAM_H
+#define GNG_NGRAM_H
+#include <QList>
+#include <QString>
+#include <QDebug>
+#include "gng_config.h"
+#include "gng_1grams.h"
+#include "gng_data.h"
+#include "gng_phrase_word.h"
+class GNGNGram : public GNGData<QList<QString>>
+{   // Data from a single "n-gram file"
+/*!
+*  * \brief Data from a single "n-gram file"
+*/
+    public:
+        GNGNGram(const QList<unsigned int>& word_lengths,
+                 unsigned int phrase_index);
+        GNGNGram(GNGNGram&) = default;
+        ~GNGNGram() = default;
+        // data
+        QList<unsigned int> ngram_word_lengths;   // length of each word in ngram
+        QList<unsigned int> word_index_in_phrase; // each ngram is part of a phrase,
+                                                  // contains which index in phrase each word here has
+        // does this n-gram contain a word at position 'index' in phrase
+        inline bool hasWordAtIndex(unsigned int index)const{ return word_index_in_phrase.indexOf(index) != -1; };
+        // data for each word here
+        QList<QString> phrases; // each ngram as a single string (for display purposes) TODO RENAME
+        QList<unsigned long long> counts; // counts in ngrams data
+
+        // default files DO NOT HAVE ANY CHOSEN COLUMN (it's a waste of space)
+        // instead local copies are made for a particular solution and the chosen column is added on creation
+        QString default_file_name; // default file name
+
+        // rationilize data, flags and counters
+        bool setNotChosenByPUW(const QList<GNGPhraseWord*>& phrase_unique_words);
+        bool data_changed_on_last_setNotChosenByPUW;
+        unsigned int changes_on_last_setNotChosenByPUW;
+        // outside this class always use load
+        bool load(bool default_location ); // Can only ever load from 1 of two palces
+private:
+        bool loadDefaultFileData(); // this version loads a raw file with NO chosen column
+        // virtual overloads
+        bool setFromFileData(const std::vector<std::vector<std::any>>& raw_data); // has chosen column!
+        bool getAsFileData(std::vector<std::vector<std::any>>& r)const;           // has chosen column!
+public:
+        // delete all entrie that have chosen == false
+        bool deleteNotChosen();
+        // The index of the passed phrase_index in the ngram words QList TODO better names thsi is word index in phrase
+        int getLocalIndexOfPhraseIndex(unsigned int phrase_index)const;
+
+        bool addUniqueChosenWords(unsigned int index, QList<QString>& list_to_fill )const;
+
+        bool saveLocalData() const;
+private:
+        bool loadLocalData();
+        bool loadRawData();
+        // dont ever call this
+        bool saveRawData()const;
+
+};
+
+#endif // GNGNGRAM_H

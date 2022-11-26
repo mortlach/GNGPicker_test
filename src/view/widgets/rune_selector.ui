@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RuneSelector</class>
+ <widget class="QWidget" name="RuneSelector">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>457</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="horizontalSpacing">
+    <number>2</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="latinRunePushButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>55</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>55</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Runic</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="f_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚠ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="2" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="u_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚢ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="3" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="th_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚦ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="4" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="o_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚩ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QCheckBox" name="r_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚱ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="1" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="c_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚳ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="1" column="1" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="g_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚷ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="1" column="2" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="w_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚹ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="1" column="3" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="h_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚻ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="1" column="4" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="n_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚾ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QCheckBox" name="i_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛁ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="j_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛂ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="1" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="eo_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛇ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="2" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="p_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛈ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QCheckBox" name="x_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛉ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="4" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="s_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛋ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QCheckBox" name="t_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛏ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="3" column="0" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="b_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛒ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="3" column="1" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="e_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛖ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QCheckBox" name="m_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛗ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QCheckBox" name="l_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛚ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="3" column="4" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="ing_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛝ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="QCheckBox" name="oe_rune">
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛟ</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="4" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+    <widget class="QCheckBox" name="d_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛞ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="4" column="1" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="a_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚪ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QCheckBox" name="ae_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚫ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QCheckBox" name="y_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᚣ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="io_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛡ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="4" column="5" alignment="Qt::AlignHCenter">
+    <widget class="QCheckBox" name="ea_rune">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ᛠ</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>20</height>
+      </size>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">runeButtonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="runeButtonGroup">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
+</ui>

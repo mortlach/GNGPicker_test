@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1207</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="mainWindowSideLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="savephrase_pushButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Save all files&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Save Phrase</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="loadphrase_pushButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Load a Phrase, navigate to phrase directory and open config.txt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Load Phrase</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="newphrase_pushButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Creates new phrase from raw data.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Enabled if succesfull phrase entered.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>New Phrase</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rationalize_pushButton">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Changes the chosen/not chosen flag for each word and ngram to be consistent with latest manual changes.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;(May take some time)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Rationlize</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deleteForAllPushButton">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Delete not chosen words from lists. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Does not save aftwards. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Delete For All</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="canaddngrams_checkBox">
+        <property name="text">
+         <string>++Ngrams</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>14</y>
+          <width>941</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="plainText">
+         <string>pre-pre-pre relase ;) 
+
+TABS:
+
+Main Words (1-grams) 
+Each possible word, sorted by rune word length. Only words chosen here are kept when creating a new phrase. Due to the large input dictionary there are many spurious words. More cuts here leads to smaller phrases to work with.
+
+Liber Primus Phrase Picker: 
+Enter phrase, either by word lengths, or rune words. e.g. 3,12,4 or ᛚᛂ ᛇᚻᛝᚳᚦᛏᚫᛂᛏᛉᚻ ᛏᚢᛟ
+If phrase is accepted &quot;New Phrase&quot; button is active. Ngram length is how many words the phrase will be split into. Correct raw data files must exist to succesfully create a new phrase. only limited options for this demo.  full data set to be included at: https://github.com/mortlach/google_ngrams_Version-20200217
+
+Phrase 1-Grams : 
+Not used yet. 
+
+Phrase N-grams: 
+The N-grams in the current phrase.
+
+Phrase words: 
+The unique words at each index in the current phrase. After a phrase is created these word lists are the best tab to make drastic cuts.
+
+Some Hints.
+
+0.Choose your main words, these lists are huge
+
+1. Choose a new phrase, or load a saved phrase. 
+1.1 For a new phrase make a new directory or overwrite an old one
+1.2 To load a phrase navigate to directory and open config,txt
+
+2. Set words/phrases to chosen/not chosen based on your preference. 
+2.1 Toggle chosen using mouse double click, spacebar
+2.2 Set chosen with t and not chosen with f.  
+2.3 Ctrl-a to highlight all items in table, etc 
+2.4 To sort click column headers. 
+
+3. Press &quot;Rationalize&quot; to apply the changes throughout the phrase, reducing the numbe rof potential cribs 
+
+Filter chosen not chosen vital radio buttons or right click in table.
+Prepend s when setting a new phrase to include _START_ tag in intial cuts
+.. ++ .. 
+</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="oneGramTab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Main Words (1-grams)</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="oneGramTabLayout"/>
+      </widget>
+      <widget class="QWidget" name="lpPhraseTab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="toolTipDuration">
+        <number>1</number>
+       </property>
+       <attribute name="title">
+        <string>Liber Primus Phrase Picker</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="lpPhraseTabLayout"/>
+      </widget>
+      <widget class="QWidget" name="phrase1GramTab">
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Phrase 1Grams</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="phrase1GramTabLayout"/>
+      </widget>
+      <widget class="QWidget" name="phraseNGramTab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Phrase N-Grams</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="phraseNGramTabLayout"/>
+      </widget>
+      <widget class="QWidget" name="phraseWordTab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Phrase Words</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="phraseWordTabLayout"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1207</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
